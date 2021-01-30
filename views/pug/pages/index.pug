@@ -1,0 +1,40 @@
+include ../components/html.pug
+  block html
+    include ../components/head.pug
+      block head
+        title Cafe House - Home
+        include ../components/styles.pug
+    include ../components/body.pug
+      block body
+        include ../abstract/_variables.pug
+        include ../abstract/_mixin.pug
+        include ../layout/navbar.pug
+          ul(class="navbar-nav me-auto mb-2 mb-lg-0")
+            li(class="nav-item")
+              a(class="nav-link active" href="index.html") home
+            li(class="nav-item")
+              a(class="nav-link" href="today-special.html") today special
+            li(class="nav-item")
+              a(class="nav-link" href="menu.html") menu
+            li(class="nav-item")
+              a(class="nav-link" href="contact.html") contact
+        include ../layout/banner.pug
+          h1
+            img(src="../content/assets/images/header-line.png" alt="Header Line Image")
+            span Welcome To
+            img(src="../content/assets/images/header-line.png" alt="Header Line Image")
+          h2 Cafe House
+          p Cafe House template is a mobile-friendly responsive #[span Bootstrap v3.3.5] layout by #[span Mina Karam]. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          div(class="link")
+            a(href="#") Details
+          div(class="banner-background")
+            img(src="../content/assets/images/table-set.png" alt="Table Set Image")
+        // Finish Designing The Website Header
+        include ../components/best-coffee.pug
+        include ../components/popular-items.pug
+          include ../components/popular-items-boxs.pug
+        include ../components/special.pug
+        include ../components/menu.pug
+        include ../layout/_global.pug
+        include ../layout/_footer.pug
+        include ../components/scripts.pug

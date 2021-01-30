@@ -1,0 +1,175 @@
+// Start Styling The Website Header
+.navbar {
+  background-color: $black;
+
+  .navbar-brand {
+    flex-basis: 30%;
+    flex-shrink: 0;
+
+    img {
+      width: auto;
+      vertical-align: sub;
+      margin-right: 5px;
+    }
+
+    span {
+      color: $orange;
+
+      font: {
+        size: 32px;
+        family: damion, cursive, sans-serif;
+      }
+    }
+  }
+
+  svg {
+    color: $orange;
+    cursor: pointer;
+    font-size: 30px;
+
+    @media (min-width:768px) {
+      display: none;
+    }
+  }
+
+  .collapse {
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: flex-end;
+
+      .nav-item {
+        .nav-link {
+          color: $white;
+          padding: 15px 25px;
+          text-transform: uppercase;
+          font-weight: 700;
+
+          &:hover {
+            color: $orange;
+          }
+
+          &.active {
+            color: $orange;
+
+            background: {
+              image: url(../assets/images/logo.png), url(../assets/images/nav-underline.png);
+              repeat: no-repeat, no-repeat;
+              size: 20px, 74px 17px;
+              position: 0% 30%, left bottom;
+            }
+          }
+
+          @media (min-width:768px) {
+            padding: 15px;
+
+            &.active {
+              background-position: 0% 30%, center bottom;
+              padding: 15px 25px;
+            }
+          }
+        }
+
+      }
+
+      @media (min-width:768px) {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width:768px) {
+      flex-basis: 65%;
+      display: flex;
+    }
+
+    @media (min-width:992px) {
+      flex-basis: 55%;
+    }
+  }
+}
+
+.banner {
+  background-color: $light-black;
+
+  .banner-images {
+    display: flex;
+    justify-content: center;
+
+    .banner-image {
+      &:not(:first-of-type) {
+        display: none;
+
+        @media (min-width:768px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .banner-text {
+    text-align: center;
+    color: $white;
+    width: 90%;
+    margin: auto;
+
+    h1 {
+      img {
+        width: 17%;
+
+        @media (min-width:576px) {
+          width: auto;
+        }
+      }
+
+      span {
+        margin: 0 20px 0 10px;
+
+        font: {
+          family: damion, cursive, sans-serif;
+          size: 35px;
+        }
+
+        @media (min-width:768px) {
+          font-size: 56px;
+        }
+      }
+    }
+
+    h2 {
+      color: $orange;
+      text-transform: uppercase;
+      font-size: 35px;
+      margin-bottom: 20px;
+
+      @media (min-width:768px) {
+        font-size: 56px;
+      }
+    }
+
+    p {
+      color: $gray;
+      font-size: 15px;
+      text-align: left;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    @media (min-width:992px) {
+      width: 80%;
+    }
+
+    @media (min-width:1200px) {
+      width: 60%;
+    }
+  }
+
+  .banner-background {
+    img {
+      margin-bottom: -100px;
+    }
+  }
+}
+
+// Finish Styling The Website Header

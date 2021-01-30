@@ -1,0 +1,41 @@
+// Start Designing The Website Header
+nav(class="navbar navbar-expand-lg")
+  div(class="container")
+    a(class="navbar-brand" href="#") #[img(src="../content/assets/images/logo.png" alt="Logo Image")] #[span Cafe House]
+    i(class=" fas fa-bars")
+    div(class="collapse navbar-collapse")
+      block navbar
+        ul(class="navbar-nav me-auto mb-2 mb-lg-0")
+          li(class="nav-item")
+            a(class="nav-link active" href="index.html") home
+          li(class="nav-item")
+            a(class="nav-link" href="today-special.html") today special
+          li(class="nav-item")
+            a(class="nav-link" href="menu.html") menu
+          li(class="nav-item")
+            a(class="nav-link" href="contact.html") contact
+section(class="banner")
+  div(class="container")
+    div(class="banner-images")
+      div(class="banner-image")
+        img(src="../content/assets/images/light.png" alt="Light Image")
+      div(class="banner-image")
+        img(src="../content/assets/images/light.png" alt="Light Image")
+      div(class="banner-image")
+        img(src="../content/assets/images/light.png" alt="Light Image")
+    div(class="banner-text")
+      h1
+        img(src="../content/assets/images/header-line.png" alt="Header Line Image")
+        block title
+          span Welcome To
+        img(src="../content/assets/images/header-line.png" alt="Header Line Image")
+      h2 Cafe House
+      block paragraph
+        p Cafe House template is a mobile-friendly responsive #[span Bootstrap v3.3.5] layout by #[span Mina Karam]. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+      
+      div(class="link")
+        block link
+          a(href="#") Details
+    div(class="banner-background")
+      img(src="../content/assets/images/table-set.png" alt="Table Set Image")
+// Finish Designing The Website Header

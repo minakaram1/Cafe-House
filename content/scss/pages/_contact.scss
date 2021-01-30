@@ -1,0 +1,98 @@
+// Start Styling The Contact Section
+.contact {
+  padding: 150px 0 70px;
+  background-color: $gray2;
+
+  h2 {
+    width: 95%;
+    margin: 0 auto 30px;
+    font-size: 30px;
+
+    @media (min-width:992px) {
+      width: 100%;
+      margin: 0 0 30px;
+    }
+  }
+
+  .contact-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .contact-box {
+      flex-basis: 95%;
+      margin: 0 auto;
+
+
+      .contact-box-form {
+        form {
+          .form {
+            width: 100%;
+            display: block;
+            font-size: 14px;
+            color: $light-black5;
+            border: 1px solid $gray6;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            transition: ease-in-out .15s;
+            padding: 6px 12px;
+            margin-bottom: 20px;
+
+            &:focus {
+              border-color: $orange3;
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(199, 156, 96, 0.6);
+            }
+          }
+
+          textarea {
+            resize: none;
+            height: 150px;
+          }
+
+          .link {
+            margin: 0;
+
+            a {
+              padding: 11px 36px;
+            }
+          }
+        }
+      }
+
+      .contact-box-map {
+        border: 5px solid $white;
+        border-radius: 5px;
+        height: 200px;
+
+        iframe {
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+
+        @media (min-width:576px) {
+          height: 250px;
+        }
+
+        @media (min-width:768px) {
+          height: 300px;
+        }
+
+        @media (min-width:992px) {
+          height: 100%;
+        }
+      }
+
+      @media (min-width:992px) {
+        flex-basis: 48%;
+        margin: 0;
+      }
+    }
+
+    @media (min-width:992px) {
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+}
+
+// Finish Styling The Contact Section
